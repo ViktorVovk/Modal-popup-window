@@ -12,6 +12,21 @@ const styleSelect = {
 const styleTextField = {
   width: 40,
 }
+const styleByttonCancel = {
+  width:40,
+  height:40,
+  backgroundColor: 'red',
+  borderRadius: '50%',
+
+}
+const styleIconCancel = {
+  width:50,
+  height:50,
+  position: 'absolute',
+  top: -5,
+  right: -5,
+}
+
 class Select extends PureComponent{
   state = {
     value: 2,
@@ -29,8 +44,8 @@ class Select extends PureComponent{
           <MenuItem value={3} key={3} primaryText={`Quadro`} />
         </SelectField>
         <TextField type="number" multiLine={false} name="textfield" style={styleTextField} underlineStyle={{borderWidth:2}}/>
-        <IconButton onClick={this.props.deleteSelectLine} iconStyle={{width:40, height:40}}
-          style={{width:80, height:80}} >
+        <IconButton onClick={this.props.deleteSelectLine} iconStyle={styleIconCancel}
+          style={styleByttonCancel} >
           <Delete color={pink100}/>
         </IconButton>
         </div>
