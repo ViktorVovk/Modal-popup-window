@@ -46,7 +46,7 @@ class Modal extends Component {
                 return <Select key={item} index={index} deleteSelectLine={this.props.deleteSelectLine} />
               })
             }
-            <FlatButton label="Добавить" primary={true} labelStyle={{paddingLeft: 3}} style={AddButtonStyle}    onClick={this.props.addBtnClick}/>
+            <FlatButton label="Добавить" primary={true} style={AddButtonStyle} onClick={this.props.addBtnClick}/>
             <div className="modal__btn-group">
               <RaisedButton label="Сохранить" primary={true} buttonStyle={styleBtnSave} onClick={this.props.clickSaveModal}/>
               <FlatButton label="Отмена" style={styleBtnCancel} onClick={this.props.clickToggleModal}/>
